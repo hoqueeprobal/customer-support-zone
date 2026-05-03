@@ -1,15 +1,16 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
-import './App.css';
-import Navbar from './components/navbar';
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "./assets/vite.svg";
+import "./App.css";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="min-h-screen flex flex-col justify-between">
-       <Navbar /> 
+      <Navbar />
       <div className="p-4">
         <div className="flex justify-center gap-4">
           <a href="https://vite.dev" target="_blank">
@@ -33,6 +34,7 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
       </div>
+      <Footer />
     </div>
   );
 }
